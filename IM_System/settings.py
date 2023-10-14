@@ -47,7 +47,7 @@ INSTALLED_APPS = [
     'api_users',
     'interview',
     'interview_api',
-    'rest_framework_simplejwt.token_blacklist',
+    # 'rest_framework_simplejwt.token_blacklist',
     'corsheaders'
 ]
 
@@ -138,7 +138,7 @@ CORS_ALLOW_METHODS = [
     "PUT",
 ]
 
-
+AUTH_USER_MODEL = "api_users.NewUser"
 # Password validation
 # https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators
 
@@ -186,7 +186,18 @@ SIMPLE_JWT = {
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
-STATIC_URL = 'static/'
+STATIC_URL = '/static/'
+
+# STATICFILES_DIRS = (
+#     BASE_DIR / 'staticfiles',
+# )
+BROKER_URL = os.environ.get('RABBITMQ_URL', 'amqp://guest:guest@localhost:5672/')
+# broker_connection_retry_on_startup = True
+# CELERY_BROKER_URL = ('RABBITMQ_URL', 'amqp://guest:guest@localhost:5672/')
+# CELERY_RESULT_BACKEND= "celery.backends.database:DatabaseBackend"
+CELERY_ACCEPT_CONTENT = ['application/json']
+CELERY_RESULT_SERIALIZER = 'json'
+CELERY_TASK_SERIALIZER = 'json'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field

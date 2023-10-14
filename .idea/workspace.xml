@@ -1,11 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5ea4563d-87f5-4db4-a8eb-ae2a41a68493" name="Changes" comment="" />
+    <list default="true" id="5ea4563d-87f5-4db4-a8eb-ae2a41a68493" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/api_users/migrations/0001_initial.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/d8b024f2-7065-4b61-9207-cbc3fc9fa830.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/d8b024f2-7065-4b61-9207-cbc3fc9fa830.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IM_System/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/IM_System/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api_users/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/api_users/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api_users/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/api_users/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interview/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/interview/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interview_api/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/interview_api/urls.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
+    <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+        <option value="HTML File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -21,6 +41,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false"
@@ -38,6 +59,7 @@
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="DJANGO_SETTINGS_MODULE" value="IM_System.settings" />
       </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="" />
@@ -64,7 +86,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1697305130057</updated>
-      <workItem from="1697305133488" duration="268000" />
+      <workItem from="1697305133488" duration="3705000" />
     </task>
     <servers />
   </component>
@@ -81,5 +103,16 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/IM_System/urls.py</url>
+          <line>1</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
