@@ -2,14 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5ea4563d-87f5-4db4-a8eb-ae2a41a68493" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/api_users/migrations/0001_initial.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/d8b024f2-7065-4b61-9207-cbc3fc9fa830.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/d8b024f2-7065-4b61-9207-cbc3fc9fa830.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IM_System/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/IM_System/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api_users/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/api_users/admin.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api_users/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/api_users/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api_users/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/api_users/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/interview/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/interview/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/interview_api/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/interview_api/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api_users/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/api_users/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,8 +19,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Script" />
         <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -44,7 +41,8 @@
     "DefaultHtmlFileTemplate": "HTML File",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false"
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Python/Crypto_web"
   },
   "keyToStringList": {
     "DatabaseDriversLRU": [
@@ -86,7 +84,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1697305130057</updated>
-      <workItem from="1697305133488" duration="3705000" />
+      <workItem from="1697305133488" duration="4892000" />
     </task>
     <servers />
   </component>
