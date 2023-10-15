@@ -9,7 +9,6 @@ from rest_framework_simplejwt.views import (
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('interview.urls', namespace='interview')),
-    path('api/', include('interview_api.urls', namespace='interview_api')),
     path('api/user/', include('api_users.urls', namespace='api_users')),
     path('api-auth/', include('rest_framework.urls', namespace='rest_framework')),
     path('api/token/', TokenObtainPairView.as_view(), name='token_obtain_pair'),

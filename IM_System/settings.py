@@ -46,8 +46,7 @@ INSTALLED_APPS = [
     'rest_framework',
     'api_users',
     'interview',
-    'interview_api',
-    # 'rest_framework_simplejwt.token_blacklist',
+    'rest_framework_simplejwt.token_blacklist',
     'corsheaders'
 ]
 
@@ -90,7 +89,7 @@ WSGI_APPLICATION = 'IM_System.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'im_system',
+        'NAME': 'im_system_db',
         'USER': 'postgres',
         'PASSWORD': 'viktor93',
         'HOST': '127.0.0.1',
@@ -138,7 +137,7 @@ CORS_ALLOW_METHODS = [
     "PUT",
 ]
 
-AUTH_USER_MODEL = "api_users.NewUser"
+# AUTH_USER_MODEL = "api_users.NewUser"
 # Password validation
 # https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators
 

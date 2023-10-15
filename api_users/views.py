@@ -1,18 +1,17 @@
-
 from rest_framework import status
 from rest_framework.response import Response
 from rest_framework.views import APIView
-from .serializers import CustomUserSerializer
+from .serializers import UserRegistrationSerializer
 from rest_framework_simplejwt.tokens import RefreshToken
 from rest_framework.permissions import AllowAny
 
 
 class RegisterViewAPI(APIView):
     permission_classes = [AllowAny]
-    serializer_class= CustomUserSerializer
+    serializer_class= UserRegistrationSerializer
 
     def post(self, request):
-        serializer = CustomUserSerializer(data=request.data)
+        serializer = UserRegistrationSerializer(data=request.data)
         if serializer.is_valid():
             user = serializer.save()
             if user:
