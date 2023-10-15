@@ -18,6 +18,7 @@ from datetime import timedelta
 
 from django.conf import settings
 
+
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -102,10 +103,13 @@ DATABASES = {
 
 REST_FRAMEWORK = {
     'DEFAULT_PERMISSION_CLASSES': [
-        'rest_framework.permissions.AllowAny',
+        'rest_framework.permissions.IsAuthenticatedOrReadOnly',
     ],
     'DEFAULT_AUTHENTICATION_CLASSES': (
         'rest_framework_simplejwt.authentication.JWTAuthentication',
+        'rest_framework.authentication.BasicAuthentication',
+        'rest_framework.authentication.TokenAuthentication',
+        'rest_framework.authentication.SessionAuthentication',
     )
 }
 
@@ -190,9 +194,9 @@ SIMPLE_JWT = {
 
 STATIC_URL = '/static/'
 AUTH_USER_MODEL = 'api_users.CustomModelUser'
-# STATICFILES_DIRS = (
-#     BASE_DIR / 'staticfiles',
-# )
+STATICFILES_DIRS = (
+    BASE_DIR / 'staticfiles',
+)
 BROKER_URL = os.environ.get('RABBITMQ_URL', 'amqp://guest:guest@localhost:5672/')
 # broker_connection_retry_on_startup = True
 # CELERY_BROKER_URL = ('RABBITMQ_URL', 'amqp://guest:guest@localhost:5672/')
@@ -200,6 +204,8 @@ BROKER_URL = os.environ.get('RABBITMQ_URL', 'amqp://guest:guest@localhost:5672/'
 CELERY_ACCEPT_CONTENT = ['application/json']
 CELERY_RESULT_SERIALIZER = 'json'
 CELERY_TASK_SERIALIZER = 'json'
+LOGIN_REDIRECT_URL = '/'
+LOGOUT_REDIRECT_URL = '/'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field

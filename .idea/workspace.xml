@@ -2,19 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="835323b9-1fff-4d4f-acc5-9dc18d436f66" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/api_users/migrations/0001_initial.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/0837d1a5-0ee5-4701-9c65-0977a96c7013.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/0837d1a5-0ee5-4701-9c65-0977a96c7013.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/0837d1a5-0ee5-4701-9c65-0977a96c7013/storage_v2/_src_/database/im_system_db.MwfLdw/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/0837d1a5-0ee5-4701-9c65-0977a96c7013/storage_v2/_src_/database/im_system_db.MwfLdw/schema/public.abK9xQ.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IM_System/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/IM_System/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/IM_System/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/IM_System/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api_users/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/api_users/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api_users/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/api_users/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api_users/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/api_users/serializers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api_users/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/api_users/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/interview/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/interview/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/interview/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/interview/migrations/0001_initial.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interview/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/interview/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/interview/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/interview/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,8 +19,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -49,7 +41,8 @@
     "DefaultHtmlFileTemplate": "HTML File",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false"
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Python/IM_System"
   },
   "keyToStringList": {
     "DatabaseDriversLRU": [
@@ -57,6 +50,11 @@
     ]
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Python\IM_System" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="IM_System" type="Python.DjangoServer" factoryName="Django server">
       <module name="IM_System" />
@@ -91,7 +89,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1697330800378</updated>
-      <workItem from="1697330802725" duration="7955000" />
+      <workItem from="1697330802725" duration="13984000" />
     </task>
     <servers />
   </component>
@@ -108,5 +106,16 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/interview/views.py</url>
+          <line>20</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
