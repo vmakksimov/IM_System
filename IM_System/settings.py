@@ -47,7 +47,10 @@ INSTALLED_APPS = [
     'api_users',
     'interview',
     'rest_framework_simplejwt.token_blacklist',
-    'corsheaders'
+    'corsheaders',
+    'celery',
+
+
 ]
 
 MIDDLEWARE = [
@@ -89,7 +92,7 @@ WSGI_APPLICATION = 'IM_System.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'im_system_db',
+        'NAME': 'im_system_db2',
         'USER': 'postgres',
         'PASSWORD': 'viktor93',
         'HOST': '127.0.0.1',
@@ -186,7 +189,7 @@ SIMPLE_JWT = {
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
 STATIC_URL = '/static/'
-
+AUTH_USER_MODEL = 'api_users.CustomModelUser'
 # STATICFILES_DIRS = (
 #     BASE_DIR / 'staticfiles',
 # )

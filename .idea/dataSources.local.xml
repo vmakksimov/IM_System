@@ -13,6 +13,7 @@
           <node kind="database">
             <name qname="@" />
             <name qname="im_system_db" />
+            <name qname="im_system_db2" />
             <node kind="schema" qname="@" />
           </node>
         </introspection-scope>
