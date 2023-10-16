@@ -64,7 +64,7 @@
       <recent name="C:\Python\IM_System\templates" />
     </key>
   </component>
-  <component name="RunManager" selected="Django tests.Test: interview.tests.InterviewTests">
+  <component name="RunManager" selected="Django tests.Test: interview.tests.Test_Create_Interview">
     <configuration name="Test: interview.tests.InterviewTests" type="DjangoTestsConfigurationType" temporary="true">
       <module name="IM_System" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -191,10 +191,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Django tests.Test: interview.tests.Test_Create_Interview" />
         <item itemvalue="Django tests.Test: interview.tests.InterviewTests" />
         <item itemvalue="Django tests.Test: interview.tests.InterviewTests.test_interview_update" />
         <item itemvalue="Django tests.Test: interview.tests.InterviewTests.test_create_interview" />
-        <item itemvalue="Django tests.Test: interview.tests.Test_Create_Interview" />
         <item itemvalue="Django tests.Test: interview.tests.InterviewTests.test_view_interview" />
       </list>
     </recent_temporary>

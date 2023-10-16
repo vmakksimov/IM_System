@@ -1,14 +1,10 @@
-from django.test import TestCase
 
 from django.test import TestCase
-from django.contrib.auth.models import User
-
 from api_users.models import CustomModelUser
 from .models import Interview
 from django.urls import reverse
 from rest_framework import status
 from rest_framework.test import APITestCase
-from django.contrib.auth.models import User
 from rest_framework.test import APIClient
 
 class Test_Create_Interview(TestCase):
@@ -24,7 +20,7 @@ class Test_Create_Interview(TestCase):
                                             gender='Male', status='Pending',
                                             is_staff='False')
 
-    def test_blog_content(self):
+    def test_interview_content(self):
         interview = Interview.objects.get(id=1)
         candidate_first_name = f'{interview.candidate_first_name}'
         candidate_last_name = f'{interview.candidate_last_name}'
@@ -67,7 +63,7 @@ class InterviewTests(APITestCase):
                                             is_staff='False')
         self.testuser1 = CustomModelUser.objects.create_superuser(
             email='vmakksimov@gmail.com', password='123456789')
-     
+
 
         self.client.login(email=self.testuser1.email,
                           password='123456789')
