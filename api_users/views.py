@@ -4,6 +4,8 @@ from rest_framework import status
 from rest_framework.renderers import TemplateHTMLRenderer
 from rest_framework.response import Response
 from rest_framework.views import APIView
+
+from services.ses import SESService
 from .serializers import UserRegistrationSerializer
 from rest_framework_simplejwt.tokens import RefreshToken
 from rest_framework.permissions import AllowAny, IsAuthenticated
@@ -12,12 +14,6 @@ from .tasks import send_email_to_new_user
 class RegisterViewAPI(APIView):
     permission_classes = [AllowAny]
     serializer_class = UserRegistrationSerializer
-    # renderer_classes = [TemplateHTMLRenderer]
-    # template_name = 'index.html'
-
-    # def get(self, request):
-    #     template = loader.get_template('users/register.html')
-    #     return HttpResponse(template.render({}, request))
 
     def post(self, request):
         serializer = UserRegistrationSerializer(data=request.data)
@@ -26,6 +22,7 @@ class RegisterViewAPI(APIView):
             if user:
                 json = serializer.data
                 # TODO celery for later
+                SESService().send_email(user.email)
                 # send_email_to_new_user.delay(user.email)
                 return Response(json, status=status.HTTP_201_CREATED)
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)

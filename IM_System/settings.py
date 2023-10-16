@@ -120,13 +120,7 @@ REST_FRAMEWORK = {
 
 CORS_ALLOW_CREDENTIALS = True
 CORS_ALLOW_ALL_ORIGINS = True
-# CSRF_COOKIE_HTTP_ONLY = False
-# CSRF_COOKIE_SECURE = True
-# CSRF_COOKIE_SAMESITE = 'Lax'
-#
-# SESSION_COOKIE_HTTPONLY = False
-# SESSION_COOKIE_SECURE = True
-# SESSION_COOKIE_SAMESITE = 'Lax'
+
 
 CORS_EXPOSE_HEADERS = [
   "Content-Type",
@@ -149,7 +143,6 @@ CORS_ALLOW_METHODS = [
     "PUT",
 ]
 
-# AUTH_USER_MODEL = "api_users.NewUser"
 # Password validation
 # https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators
 
