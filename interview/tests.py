@@ -14,9 +14,9 @@ from rest_framework.test import APIClient
 class Test_Create_Interview(TestCase):
     @classmethod
     def setUpTestData(cls):
-        testuser1 = CustomModelUser.objects.create_user(
+        CustomModelUser.objects.create_user(
             email='vmakksimov@gmail.com', password='123456789', is_staff='True')
-        test_post = Interview.objects.create(id=1, candidate_first_name='Viktor',
+        Interview.objects.create(id=1, candidate_first_name='Viktor',
                                              candidate_last_name='Maksimov',
                                             date_for_interview='2023-10-25',
                                             email='vmakksimov@gmail.com',
@@ -67,7 +67,7 @@ class InterviewTests(APITestCase):
                                             is_staff='False')
         self.testuser1 = CustomModelUser.objects.create_superuser(
             email='vmakksimov@gmail.com', password='123456789')
-        # self.testuser1.is_staff = True
+     
 
         self.client.login(email=self.testuser1.email,
                           password='123456789')
