@@ -20,23 +20,22 @@ class InterviewWritePersmission(BasePermission):
             return True
         return obj.email == request.user
 
-class InterviewList(generics.ListAPIView):
-    queryset = Interview.objects.all()
-    # renderer_classes = [TemplateHTMLRenderer]
-    serializer_class = InterviewSerializer
-    permission_classes = [IsAdminUser]
-
-    def get(self, request, *args, **kwargs):
-        interviews = Interview.objects.all().values()
-        context = {
-                'interview': interviews
-            }
-        template = loader.get_template('interview/all.html')
-        return HttpResponse(template.render(context, request))
+# class InterviewList(generics.ListAPIView):
+#     queryset = Interview.objects.all()
+#     # renderer_classes = [TemplateHTMLRenderer]
+#     serializer_class = InterviewSerializer
+#     permission_classes = [IsAdminUser]
+#
+#     def get(self, request, *args, **kwargs):
+#         interviews = Interview.objects.all().values()
+#         context = {
+#                 'interview': interviews
+#             }
+#         template = loader.get_template('interview/all.html')
+#         return HttpResponse(template.render(context, request))
 
 class InterviewUpdateView (generics.RetrieveUpdateDestroyAPIView, InterviewWritePersmission):
     queryset = Interview.objects.all()
-    user = CustomModelUser.objects.values()
     serializer_class = InterviewSerializer
     permission_classes = [DjangoModelPermissions]
 
