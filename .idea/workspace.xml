@@ -2,12 +2,39 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="835323b9-1fff-4d4f-acc5-9dc18d436f66" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/interview/migrations/0002_remove_interview_is_staff.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/0837d1a5-0ee5-4701-9c65-0977a96c7013.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/0837d1a5-0ee5-4701-9c65-0977a96c7013.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/0837d1a5-0ee5-4701-9c65-0977a96c7013/storage_v2/_src_/database/im_system_db2.X9-VgQ/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/0837d1a5-0ee5-4701-9c65-0977a96c7013/storage_v2/_src_/database/im_system_db2.X9-VgQ/schema/public.abK9xQ.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/interview/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/interview/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/interview/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/interview/tests.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api_users/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/api_users/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interview/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/interview/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/staticfiles/fonts/fontawesome-webfont.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/staticfiles/fonts/fontawesome-webfont.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/staticfiles/fonts/fontawesome-webfont.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/staticfiles/images/106962967-1634709558798-gettyimages-1235570383-porzycki-cryptocu210928_npbUe.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/staticfiles/images/SL-0212121-40670-68.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/staticfiles/images/b3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/staticfiles/images/crypto-wallet-bitcoin-icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/staticfiles/images/favicon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/staticfiles/images/financial-growth-icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/staticfiles/images/hand-money-income-dollar-icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/staticfiles/images/hero-bg.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/staticfiles/images/icons8-contact-100.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/staticfiles/images/icons8-info-squared-100.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/staticfiles/images/icons8-us-news-100.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/staticfiles/images/pandasecurity-crypto-gaming.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/staticfiles/images/top_img.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/staticfiles/images/wallet-money-icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/staticfiles/js/bootstrap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/staticfiles/js/custom.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/staticfiles/js/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/staticfiles/js/jquery-3.4.1.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/staticfiles/style/bootstrap.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/staticfiles/style/font-awesome.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/staticfiles/style/responsive.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/staticfiles/style/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/staticfiles/style/style.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/staticfiles/style/style.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/interview/all.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/interview/book_interview.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/users/register.html" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -203,7 +230,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1697330800378</updated>
-      <workItem from="1697330802725" duration="34050000" />
+      <workItem from="1697330802725" duration="34426000" />
     </task>
     <servers />
   </component>

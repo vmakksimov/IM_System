@@ -12,20 +12,15 @@ from .tasks import send_email_to_new_user
 class RegisterViewAPI(APIView):
     permission_classes = [AllowAny]
     serializer_class = UserRegistrationSerializer
-    renderer_classes = [TemplateHTMLRenderer]
-    template_name = 'index.html'
+    # renderer_classes = [TemplateHTMLRenderer]
+    # template_name = 'index.html'
 
-    def get(self, request):
-        template = loader.get_template('users/register.html')
-        return HttpResponse(template.render({}, request))
+    # def get(self, request):
+    #     template = loader.get_template('users/register.html')
+    #     return HttpResponse(template.render({}, request))
 
     def post(self, request):
-        data = {
-            'email': request.data['email'],
-            'password': request.data['password'],
-            'password2': request.data['password2']
-        }
-        serializer = UserRegistrationSerializer(data=data)
+        serializer = UserRegistrationSerializer(data=request.data)
         if serializer.is_valid():
             user = serializer.save()
             if user:
