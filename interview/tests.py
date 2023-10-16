@@ -17,8 +17,7 @@ class Test_Create_Interview(TestCase):
                                             date_for_interview='2023-10-25',
                                             email='vmakksimov@gmail.com',
                                             mobile_number='0899006831',
-                                            gender='Male', status='Pending',
-                                            is_staff='False')
+                                            gender='Male', status='Pending')
 
     def test_interview_content(self):
         interview = Interview.objects.get(id=1)
@@ -29,14 +28,12 @@ class Test_Create_Interview(TestCase):
         mobile_number = f'{interview.mobile_number}'
         gender = f'{interview.gender}'
         status = f'{interview.status}'
-        is_staff = f'{interview.is_staff}'
         self.assertEqual(candidate_first_name, 'Viktor')
         self.assertEqual(candidate_last_name, 'Maksimov')
         self.assertEqual(email, 'vmakksimov@gmail.com')
         self.assertEqual(date_for_interview, '2023-10-25')
         self.assertEqual(mobile_number, '0899006831')
         self.assertEqual(gender, 'Male')
-        self.assertEqual(is_staff, 'False')
         self.assertEqual(status, 'Pending')
         self.assertEqual(str(interview), "Viktor Maksimov")
 
@@ -59,8 +56,7 @@ class InterviewTests(APITestCase):
                                             date_for_interview='2023-10-25',
                                             email='vmakksimov@gmail.com',
                                             mobile_number='0899006831',
-                                            gender='Male', status='Pending',
-                                            is_staff='False')
+                                            gender='Male', status='Pending')
         self.testuser1 = CustomModelUser.objects.create_superuser(
             email='vmakksimov@gmail.com', password='123456789')
 
@@ -70,7 +66,7 @@ class InterviewTests(APITestCase):
 
         data = {"candidate_first_name": "Viktor",
                 "candidate_last_name": "Maksimov", "date_for_interview": "2023-10-25", "email": "vmakksimov@gmail.com",
-                "mobile_number": "0899006831", "gender": "Male", "status": "Pending", "is_staff": "False"}
+                "mobile_number": "0899006831", "gender": "Male", "status": "Pending"}
         url = reverse('interview:create-interview')
         response = self.client.post(url, data, format='json')
         self.assertEqual(response.status_code, status.HTTP_201_CREATED)
@@ -83,8 +79,7 @@ class InterviewTests(APITestCase):
                                             date_for_interview='2023-10-25',
                                             email='vmakksimov@gmail.com',
                                             mobile_number='0899006831',
-                                            gender='Male', status='Pending',
-                                            is_staff='False')
+                                            gender='Male', status='Pending')
         self.testuser1 = CustomModelUser.objects.create_superuser(
             email='vmakksimov@gmail.com', password='123456789')
         self.testuser2 = CustomModelUser.objects.create_user(
@@ -99,7 +94,7 @@ class InterviewTests(APITestCase):
             url, {
                 "id": 1, "candidate_first_name": "Viktor",
                 "candidate_last_name": "Maksimov", "date_for_interview": "2023-10-25", "email": "vmakksimov@gmail.com",
-                "mobile_number": "0899006831", "gender": "Male", "status": "Pending", "is_staff": "False"
+                "mobile_number": "0899006831", "gender": "Male", "status": "Pending"
             }, format='json')
         print(response.data)
         self.assertEqual(response.status_code, status.HTTP_200_OK)

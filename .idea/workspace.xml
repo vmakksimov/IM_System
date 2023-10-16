@@ -2,10 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="835323b9-1fff-4d4f-acc5-9dc18d436f66" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/interview/migrations/0002_remove_interview_is_staff.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/0837d1a5-0ee5-4701-9c65-0977a96c7013.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/0837d1a5-0ee5-4701-9c65-0977a96c7013.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/0837d1a5-0ee5-4701-9c65-0977a96c7013/storage_v2/_src_/database/im_system_db2.X9-VgQ/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/0837d1a5-0ee5-4701-9c65-0977a96c7013/storage_v2/_src_/database/im_system_db2.X9-VgQ/schema/public.abK9xQ.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IM_System/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/IM_System/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/interview/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/interview/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/interview/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/interview/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interview/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/interview/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interview/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/interview/tests.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -185,8 +187,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Django tests.Test: interview.tests.Test_Create_Interview" />
         <item itemvalue="Django tests.Test: interview.tests.InterviewTests" />
+        <item itemvalue="Django tests.Test: interview.tests.Test_Create_Interview" />
         <item itemvalue="Django tests.Test: interview.tests.InterviewTests.test_interview_update" />
         <item itemvalue="Django tests.Test: interview.tests.InterviewTests.test_create_interview" />
         <item itemvalue="Django tests.Test: interview.tests.InterviewTests.test_view_interview" />
@@ -201,7 +203,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1697330800378</updated>
-      <workItem from="1697330802725" duration="32471000" />
+      <workItem from="1697330802725" duration="34050000" />
     </task>
     <servers />
   </component>
@@ -221,9 +223,9 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/IM_System$Test__interview_tests_InterviewTests_test_interview_update.coverage" NAME="Test: interview.tests.InterviewTests.test_interview_update Coverage Results" MODIFIED="1697417069699" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
-    <SUITE FILE_PATH="coverage/IM_System$Test__interview_tests_Test_Create_Interview.coverage" NAME="Test: interview.tests.Test_Create_Interview Coverage Results" MODIFIED="1697461113988" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/IM_System$Test__interview_tests_Test_Create_Interview.coverage" NAME="Test: interview.tests.Test_Create_Interview Coverage Results" MODIFIED="1697463216613" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/IM_System$Test__interview_tests_InterviewTests_test_create_interview.coverage" NAME="Test: interview.tests.InterviewTests.test_create_interview Coverage Results" MODIFIED="1697416989622" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
-    <SUITE FILE_PATH="coverage/IM_System$Test__interview_tests_InterviewTests.coverage" NAME="Test: interview.tests.InterviewTests Coverage Results" MODIFIED="1697417439557" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/IM_System$Test__interview_tests_InterviewTests.coverage" NAME="Test: interview.tests.InterviewTests Coverage Results" MODIFIED="1697463226750" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/IM_System$Test__interview_tests_InterviewTests_test_view_interview.coverage" NAME="Test: interview.tests.InterviewTests.test_view_interview Coverage Results" MODIFIED="1697416263647" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
   </component>
 </project>

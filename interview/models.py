@@ -64,7 +64,7 @@ class Interview(models.Model):
         default=DO_NOT_SHOW,
     )
 
-    is_staff = models.BooleanField(default=False)
+    # is_staff = models.BooleanField(default=False)
 
     def __str__(self):
         return f'{self.candidate_first_name} {self.candidate_last_name}'
