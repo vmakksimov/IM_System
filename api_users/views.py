@@ -9,7 +9,7 @@ from services.ses import SESService
 from .serializers import UserRegistrationSerializer
 from rest_framework_simplejwt.tokens import RefreshToken
 from rest_framework.permissions import AllowAny, IsAuthenticated
-from .tasks import send_email_to_new_user
+
 
 class RegisterViewAPI(APIView):
     permission_classes = [AllowAny]
@@ -21,9 +21,8 @@ class RegisterViewAPI(APIView):
             user = serializer.save()
             if user:
                 json = serializer.data
-                # TODO celery for later
-                SESService().send_email(user.email)
-                # send_email_to_new_user.delay(user.email)
+                ### TODO unmark to send email notification to register user
+                # SESService().send_email(user.email)
                 return Response(json, status=status.HTTP_201_CREATED)
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 

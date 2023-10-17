@@ -2,12 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="835323b9-1fff-4d4f-acc5-9dc18d436f66" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/0837d1a5-0ee5-4701-9c65-0977a96c7013.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/0837d1a5-0ee5-4701-9c65-0977a96c7013.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/0837d1a5-0ee5-4701-9c65-0977a96c7013/storage_v2/_src_/database/im_system_db2.X9-VgQ/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/0837d1a5-0ee5-4701-9c65-0977a96c7013/storage_v2/_src_/database/im_system_db2.X9-VgQ/schema/public.abK9xQ.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IM_System/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/IM_System/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api_users/tasks.py" beforeDir="false" afterPath="$PROJECT_DIR$/api_users/tasks.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api_users/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/api_users/tests.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api_users/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/api_users/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interview/common/validators.py" beforeDir="false" afterPath="$PROJECT_DIR$/interview/common/validators.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interview/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/interview/tests.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interview/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/interview/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/interview/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/interview/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/ses.py" beforeDir="false" afterPath="$PROJECT_DIR$/services/ses.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,7 +65,47 @@
       <recent name="C:\Python\IM_System\templates" />
     </key>
   </component>
-  <component name="RunManager" selected="Django Server.IM_System">
+  <component name="RunManager" selected="Django tests.Test: api_users.tests.Test_Create_User">
+    <configuration name="Test: api_users.tests.Test_Create_User" type="DjangoTestsConfigurationType" temporary="true">
+      <module name="IM_System" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="TARGET" value="api_users.tests.Test_Create_User" />
+      <option name="SETTINGS_FILE" value="" />
+      <option name="CUSTOM_SETTINGS" value="false" />
+      <option name="USE_OPTIONS" value="false" />
+      <option name="OPTIONS" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Test: api_users.tests.Test_Create_user.test_create_interview" type="DjangoTestsConfigurationType" temporary="true">
+      <module name="IM_System" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="TARGET" value="api_users.tests.Test_Create_user.test_create_interview" />
+      <option name="SETTINGS_FILE" value="" />
+      <option name="CUSTOM_SETTINGS" value="false" />
+      <option name="USE_OPTIONS" value="false" />
+      <option name="OPTIONS" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="Test: interview.tests.InterviewTests" type="DjangoTestsConfigurationType" temporary="true">
       <module name="IM_System" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -121,46 +166,6 @@
       <option name="OPTIONS" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Test: interview.tests.InterviewTests.test_view_interview" type="DjangoTestsConfigurationType" temporary="true">
-      <module name="IM_System" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="TARGET" value="interview.tests.InterviewTests.test_view_interview" />
-      <option name="SETTINGS_FILE" value="" />
-      <option name="CUSTOM_SETTINGS" value="false" />
-      <option name="USE_OPTIONS" value="false" />
-      <option name="OPTIONS" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Test: interview.tests.Test_Create_Interview" type="DjangoTestsConfigurationType" temporary="true">
-      <module name="IM_System" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="TARGET" value="interview.tests.Test_Create_Interview" />
-      <option name="SETTINGS_FILE" value="" />
-      <option name="CUSTOM_SETTINGS" value="false" />
-      <option name="USE_OPTIONS" value="false" />
-      <option name="OPTIONS" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="IM_System" type="Python.DjangoServer" factoryName="Django server">
       <module name="IM_System" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -187,11 +192,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Django tests.Test: api_users.tests.Test_Create_User" />
+        <item itemvalue="Django tests.Test: api_users.tests.Test_Create_user.test_create_interview" />
         <item itemvalue="Django tests.Test: interview.tests.InterviewTests" />
-        <item itemvalue="Django tests.Test: interview.tests.Test_Create_Interview" />
         <item itemvalue="Django tests.Test: interview.tests.InterviewTests.test_interview_update" />
         <item itemvalue="Django tests.Test: interview.tests.InterviewTests.test_create_interview" />
-        <item itemvalue="Django tests.Test: interview.tests.InterviewTests.test_view_interview" />
       </list>
     </recent_temporary>
   </component>
@@ -203,7 +208,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1697330800378</updated>
-      <workItem from="1697330802725" duration="36866000" />
+      <workItem from="1697330802725" duration="49823000" />
     </task>
     <servers />
   </component>
@@ -222,10 +227,12 @@
     </option>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/IM_System$Test__interview_tests_InterviewTests_test_interview_update.coverage" NAME="Test: interview.tests.InterviewTests.test_interview_update Coverage Results" MODIFIED="1697417069699" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
-    <SUITE FILE_PATH="coverage/IM_System$Test__interview_tests_Test_Create_Interview.coverage" NAME="Test: interview.tests.Test_Create_Interview Coverage Results" MODIFIED="1697463216613" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
-    <SUITE FILE_PATH="coverage/IM_System$Test__interview_tests_InterviewTests_test_create_interview.coverage" NAME="Test: interview.tests.InterviewTests.test_create_interview Coverage Results" MODIFIED="1697416989622" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
-    <SUITE FILE_PATH="coverage/IM_System$Test__interview_tests_InterviewTests.coverage" NAME="Test: interview.tests.InterviewTests Coverage Results" MODIFIED="1697463226750" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
-    <SUITE FILE_PATH="coverage/IM_System$Test__interview_tests_InterviewTests_test_view_interview.coverage" NAME="Test: interview.tests.InterviewTests.test_view_interview Coverage Results" MODIFIED="1697416263647" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/IM_System$Test__interview_tests_InterviewTests_test_interview_update.coverage" NAME="Test: interview.tests.InterviewTests.test_interview_update Coverage Results" MODIFIED="1697505101794" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/IM_System$Test__api_users_tests_Test_Create_User.coverage" NAME="Test: api_users.tests.Test_Create_User Coverage Results" MODIFIED="1697505484842" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/IM_System$Test__interview_tests_Test_Create_Interview.coverage" NAME="Test: interview.tests.Test_Create_Interview Coverage Results" MODIFIED="1697498762740" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/IM_System$Test__interview_tests_InterviewTests_test_create_interview.coverage" NAME="Test: interview.tests.InterviewTests.test_create_interview Coverage Results" MODIFIED="1697505074852" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/IM_System$Test__interview_tests_InterviewTests.coverage" NAME="Test: interview.tests.InterviewTests Coverage Results" MODIFIED="1697505186273" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/IM_System$Test__interview_tests_InterviewTests_test_view_interview.coverage" NAME="Test: interview.tests.InterviewTests.test_view_interview Coverage Results" MODIFIED="1697505019454" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/IM_System$Test__api_users_tests_Test_Create_user_test_create_interview.coverage" NAME="Test: api_users.tests.Test_Create_user.test_create_interview Coverage Results" MODIFIED="1697505779465" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
   </component>
 </project>
