@@ -34,14 +34,16 @@ class Interview(models.Model):
                                            )
 
     date_for_interview = models.DateField(
-        null=True,
-        blank=True,
+        null=False,
+        blank=False,
+        default=None
 
     )
 
     email = models.EmailField(
-        null=True,
-        blank=True,
+        null=False,
+        blank=False,
+        default=None,
     )
 
     mobile_number = models.CharField(
@@ -63,8 +65,6 @@ class Interview(models.Model):
         choices=STATUS,
         default=DO_NOT_SHOW,
     )
-
-    # is_staff = models.BooleanField(default=False)
 
     def __str__(self):
         return f'{self.candidate_first_name} {self.candidate_last_name}'

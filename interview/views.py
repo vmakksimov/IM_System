@@ -12,14 +12,14 @@ from rest_framework.response import Response
 # Create your views here.
 
 class InterviewWritePersmission(BasePermission):
-    message = 'Only interviews and admins are allowed to delete'
+    message = 'Only interviews and admins are allowed to update'
     def has_object_permission(self, request, view, obj):
         if request.method in SAFE_METHODS:
             return True
         return obj.email == request.user
 
 
-class InterviewUpdateView (generics.RetrieveUpdateDestroyAPIView, InterviewWritePersmission):
+class InterviewUpdateView (generics.RetrieveUpdateDestroyAPIView):
     queryset = Interview.objects.all()
     serializer_class = InterviewSerializer
     permission_classes = [DjangoModelPermissions]
@@ -43,11 +43,10 @@ class InterviewUpdateView (generics.RetrieveUpdateDestroyAPIView, InterviewWrite
             delete_interview_from_db.delay(interview.id)
         return Response(status=status.HTTP_200_OK)
 
-
 class CreateInterviewView(generics.CreateAPIView):
     queryset = Interview.objects.all()
     serializer_class = InterviewSerializer
-    permission_classes = [AllowAny]
+    permission_classes = [IsAdminUser]
 
 class InterviewAPIList(generics.ListAPIView):
     queryset = Interview.objects.all()

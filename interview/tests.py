@@ -64,7 +64,7 @@ class InterviewTests(APITestCase):
                                             mobile_number='359899006831',
                                             gender='Male', status='Pending')
         self.testuser1 = CustomModelUser.objects.create_user(
-            email='vmakksimov@gmail.com', password='123456789')
+            email='vmakksimov@gmail.com', password='123456789', is_staff='True')
 
 
         self.client.login(email=self.testuser1.email,
