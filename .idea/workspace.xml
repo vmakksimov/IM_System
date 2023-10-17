@@ -2,15 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="835323b9-1fff-4d4f-acc5-9dc18d436f66" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/interview/migrations/0003_alter_interview_date_for_interview_and_more.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IM_System/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/IM_System/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IM_System/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/IM_System/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api_users/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/api_users/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/interview/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/interview/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/interview/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/interview/tests.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/interview/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/interview/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -190,11 +183,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Django tests.Test: api_users.tests.Test_Create_User" />
         <item itemvalue="Django tests.Test: interview.tests.InterviewTests" />
+        <item itemvalue="Django tests.Test: interview.tests.Test_Create_Interview" />
+        <item itemvalue="Django tests.Test: api_users.tests.Test_Create_User" />
         <item itemvalue="Django tests.Test: interview.tests.InterviewTests.test_create_interview" />
         <item itemvalue="Django tests.Test: interview.tests.InterviewTests.test_view_interview" />
-        <item itemvalue="Django tests.Test: interview.tests.Test_Create_Interview" />
       </list>
     </recent_temporary>
   </component>
@@ -206,7 +199,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1697330800378</updated>
-      <workItem from="1697330802725" duration="54778000" />
+      <workItem from="1697330802725" duration="56643000" />
     </task>
     <servers />
   </component>
@@ -234,9 +227,9 @@
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/IM_System$Test__interview_tests_InterviewTests_test_interview_update.coverage" NAME="Test: interview.tests.InterviewTests.test_interview_update Coverage Results" MODIFIED="1697505101794" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/IM_System$Test__api_users_tests_Test_Create_User.coverage" NAME="Test: api_users.tests.Test_Create_User Coverage Results" MODIFIED="1697508633030" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
-    <SUITE FILE_PATH="coverage/IM_System$Test__interview_tests_Test_Create_Interview.coverage" NAME="Test: interview.tests.Test_Create_Interview Coverage Results" MODIFIED="1697508234280" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/IM_System$Test__interview_tests_Test_Create_Interview.coverage" NAME="Test: interview.tests.Test_Create_Interview Coverage Results" MODIFIED="1697512623135" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/IM_System$Test__interview_tests_InterviewTests_test_create_interview.coverage" NAME="Test: interview.tests.InterviewTests.test_create_interview Coverage Results" MODIFIED="1697508493540" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
-    <SUITE FILE_PATH="coverage/IM_System$Test__interview_tests_InterviewTests.coverage" NAME="Test: interview.tests.InterviewTests Coverage Results" MODIFIED="1697508502149" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/IM_System$Test__interview_tests_InterviewTests.coverage" NAME="Test: interview.tests.InterviewTests Coverage Results" MODIFIED="1697512964853" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/IM_System$Test__interview_tests_InterviewTests_test_view_interview.coverage" NAME="Test: interview.tests.InterviewTests.test_view_interview Coverage Results" MODIFIED="1697508259763" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/IM_System$Test__api_users_tests_Test_Create_user_test_create_interview.coverage" NAME="Test: api_users.tests.Test_Create_user.test_create_interview Coverage Results" MODIFIED="1697505840088" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
   </component>

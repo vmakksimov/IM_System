@@ -10,15 +10,6 @@ from rest_framework.permissions import BasePermission, IsAuthenticatedOrReadOnly
 from rest_framework.response import Response
 
 # Create your views here.
-
-class InterviewWritePersmission(BasePermission):
-    message = 'Only interviews and admins are allowed to update'
-    def has_object_permission(self, request, view, obj):
-        if request.method in SAFE_METHODS:
-            return True
-        return obj.email == request.user
-
-
 class InterviewUpdateView (generics.RetrieveUpdateDestroyAPIView):
     queryset = Interview.objects.all()
     serializer_class = InterviewSerializer
