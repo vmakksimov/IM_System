@@ -24,7 +24,7 @@ class RegisterViewAPI(APIView):
             if user:
                 json = serializer.data
                 ### TODO unmark to send email notification to register user
-                send_email_to_user(user.email)
+                #send_email_to_user(user.email)
                 return Response(json, status=status.HTTP_201_CREATED)
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
