@@ -10,6 +10,8 @@ from .serializers import UserRegistrationSerializer
 from rest_framework_simplejwt.tokens import RefreshToken
 from rest_framework.permissions import AllowAny, IsAuthenticated
 
+from .tasks import send_email_to_user
+
 
 class RegisterViewAPI(APIView):
     permission_classes = [AllowAny]
@@ -22,7 +24,7 @@ class RegisterViewAPI(APIView):
             if user:
                 json = serializer.data
                 ### TODO unmark to send email notification to register user
-                # SESService().send_email(user.email)
+                send_email_to_user(user.email)
                 return Response(json, status=status.HTTP_201_CREATED)
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 

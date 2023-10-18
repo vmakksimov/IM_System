@@ -16,7 +16,7 @@ urlpatterns = [
     path('api-auth/', include('rest_framework.urls', namespace='rest_framework')),
     path('api/token/', TokenObtainPairView.as_view(), name='token_obtain_pair'),
     path('api/token/refresh/', TokenRefreshView.as_view(), name='token_refresh'),
-    path("schema-graph/", Schema.as_view()),
     path('docs/', include_docs_urls(title='InterviewAPI')),
     path('schema', get_schema_view(title='InterviewAPI', description='API for Interview', version="1.0.0"), name='openapi-schema'),
+    path('schema-graph/', Schema.as_view()),
 ]

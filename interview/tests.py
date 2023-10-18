@@ -45,11 +45,8 @@ class InterviewTests(APITestCase):
         Ensure we can view interviews if user is admin or staff.
 
         """
-        self.testuser1 = CustomModelUser.objects.create_user(
-            email='elena@gmail.com', password='123456789', is_staff='True')
-
-        self.client.login(email=self.testuser1.email,
-                          password='123456789')
+        self.testuser1 = CustomModelUser.objects.create_user(email='elena@gmail.com', password='123456789', is_staff='True')
+        self.client.login(email=self.testuser1.email, password='123456789')
         url = reverse('interview:all-interviews')
         response = self.client.get(url, format='json')
         self.assertEqual(response.status_code, status.HTTP_200_OK)
@@ -63,13 +60,8 @@ class InterviewTests(APITestCase):
                                             email='vmakksimov@gmail.com',
                                             mobile_number='359899006831',
                                             gender='Male', status='Pending')
-        self.testuser1 = CustomModelUser.objects.create_user(
-            email='vmakksimov@gmail.com', password='123456789', is_staff='True')
-
-
-        self.client.login(email=self.testuser1.email,
-                          password='123456789')
-
+        self.testuser1 = CustomModelUser.objects.create_user(email='vmakksimov@gmail.com', password='123456789', is_staff='True')
+        self.client.login(email=self.testuser1.email, password='123456789')
         data = {"candidate_first_name": "Viktor",
                 "candidate_last_name": "Maksimov", "date_for_interview": "2023-10-25", "email": "vmakksimov@gmail.com",
                 "mobile_number": "359899006831", "gender": "Male", "status": "Pending"}
@@ -86,16 +78,10 @@ class InterviewTests(APITestCase):
                                             email='vmakksimov@gmail.com',
                                             mobile_number='359899006831',
                                             gender='Male', status='Pending')
-        self.testuser1 = CustomModelUser.objects.create_superuser(
-            email='vmakksimov@gmail.com', password='123456789')
-        self.testuser2 = CustomModelUser.objects.create_user(
-            email='ivan@abv.bg', password='123456789')
-
-        client.login(email=self.testuser1.email,
-                     password='123456789')
-
+        self.testuser1 = CustomModelUser.objects.create_superuser(email='vmakksimov@gmail.com', password='123456789')
+        self.testuser2 = CustomModelUser.objects.create_user(email='ivan@abv.bg', password='123456789')
+        client.login(email=self.testuser1.email,password='123456789')
         url = reverse(('interview:modify-interviews'), kwargs={'pk': 1})
-
         response = client.put(
             url, {
                 "id": 1, "candidate_first_name": "Viktor",

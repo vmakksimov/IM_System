@@ -3,7 +3,7 @@
   <database-model serializer="dbm" dbms="POSTGRES" family-id="POSTGRES" format-version="4.43">
     <root id="1">
       <DateStyle>dmy</DateStyle>
-      <IntrospectionStateNumber>15526</IntrospectionStateNumber>
+      <IntrospectionStateNumber>18270</IntrospectionStateNumber>
       <ServerVersion>14.5</ServerVersion>
       <StartupTime>1697027377</StartupTime>
       <TimeZones>true ACDT
@@ -857,7 +857,7 @@ sequence|table|53917|53918|1
 13388||10|C|G
 13388||-9223372036854775808|U|G
 13388||10|U|G</Grants>
-      <IntrospectionStateNumber>15526</IntrospectionStateNumber>
+      <IntrospectionStateNumber>18270</IntrospectionStateNumber>
       <ObjectId>54013</ObjectId>
       <Relations>sequence|table|54014|54015|1
 sequence|table|54022|54023|1
@@ -7704,7 +7704,7 @@ sequence|table|54167|54168|1
     <schema id="526" parent="11" name="public">
       <Comment>standard public schema</Comment>
       <Current>1</Current>
-      <IntrospectionStateNumber>15526</IntrospectionStateNumber>
+      <IntrospectionStateNumber>18270</IntrospectionStateNumber>
       <ObjectId>2200</ObjectId>
       <StateNumber>527</StateNumber>
       <OwnerName>postgres</OwnerName>
@@ -9672,14 +9672,16 @@ pg_catalog</CollationParentNames>
     </column>
     <column id="788" parent="573" name="date_for_interview">
       <DataType>date|0s</DataType>
+      <NotNull>1</NotNull>
       <Position>4</Position>
-      <StateNumber>12412</StateNumber>
+      <StateNumber>17089</StateNumber>
       <TypeId>1082</TypeId>
     </column>
     <column id="789" parent="573" name="email">
       <DataType>varchar(254)|0s</DataType>
+      <NotNull>1</NotNull>
       <Position>5</Position>
-      <StateNumber>12412</StateNumber>
+      <StateNumber>17089</StateNumber>
       <TypeId>1043</TypeId>
     </column>
     <column id="790" parent="573" name="mobile_number">

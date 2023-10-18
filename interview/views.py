@@ -1,6 +1,6 @@
 
 from rest_framework import generics, status
-from api_users.tasks import delete_interview_from_db
+from api_users.tasks import delete_interview_from_db, send_email_to_user
 from services.ses import SESService
 from api_users.models import CustomModelUser
 from interview.models import Interview
@@ -30,7 +30,7 @@ class InterviewUpdateView (generics.RetrieveUpdateDestroyAPIView):
         interview.save()
         if new_status == 'Approved' or new_status == 'Rejected':
             ### TODO unmark to send email notification according to the status of the application
-            # SESService().send_email(interview.email, new_status)
+            send_email_to_user.delay(interview.email, new_status)
             delete_interview_from_db.delay(interview.id)
         return Response(status=status.HTTP_200_OK)
 
