@@ -40,5 +40,5 @@ class CustomManager(auth_base.BaseUserManager):
         return self._create_user(email, password, **extra_fields)
 
 
-class BaseUserManager(UserManager):
-    pass
+# class BaseUserManager(UserManager):
+#     pass

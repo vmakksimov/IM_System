@@ -25,8 +25,8 @@ class InterviewUpdateView (generics.RetrieveUpdateDestroyAPIView):
         interview.candidate_last_name = request.data['candidate_last_name']
         interview.mobile_number = request.data['mobile_number']
         interview.gender = request.data['gender']
-        serializer = InterviewSerializer(data=request.data)
-        serializer.is_valid(raise_exception=True)
+        # serializer = InterviewSerializer(data=request.data)
+        # serializer.is_valid(raise_exception=True)
         interview.save()
         if new_status == 'Approved' or new_status == 'Rejected':
             ### TODO unmark to send email notification according to the status of the application

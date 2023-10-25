@@ -44,11 +44,7 @@ class GroupAdminForm(forms.ModelForm):
         return instance
 
 
-
-
 admin.site.unregister(Group)
-
-
 # Create a new Group admin.
 class GroupAdmin(admin.ModelAdmin):
     # Use our custom form.

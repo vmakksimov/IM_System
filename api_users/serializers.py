@@ -5,6 +5,10 @@ from rest_framework.validators import UniqueValidator
 
 from api_users.models import CustomModelUser
 
+class UserSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = CustomModelUser
+        fields = ('id', 'email',)
 
 class UserRegistrationSerializer(serializers.ModelSerializer):
     email = serializers.EmailField(

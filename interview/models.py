@@ -24,6 +24,7 @@ class Interview(models.Model):
                                             null=False,
                                             blank=False,
                                             default=None,
+
                                             )
     candidate_last_name = models.CharField(max_length=10,
                                            validators=(
@@ -44,6 +45,7 @@ class Interview(models.Model):
         null=False,
         blank=False,
         default=None,
+        unique=True,
     )
 
     mobile_number = models.CharField(
