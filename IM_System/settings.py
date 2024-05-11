@@ -11,12 +11,12 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 """
 
 import os
+from dotenv import load_dotenv
 from pathlib import Path
 from corsheaders.defaults import default_headers
-
 from datetime import timedelta
-
 from django.conf import settings
+load_dotenv()
 
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -51,9 +51,6 @@ INSTALLED_APPS = [
     'corsheaders',
     'celery',
     'schema_graph',
-
-
-
 ]
 
 MIDDLEWARE = [
@@ -94,7 +91,7 @@ WSGI_APPLICATION = 'IM_System.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': os.getenv('DB_ENGINE'),
+        'ENGINE': 'django.db.backends.postgresql',
         'NAME': os.getenv('DB_NAME'),
         'USER': os.getenv('DB_USER'),
         'PASSWORD': os.getenv('DB_PASSWORD'),

@@ -2,9 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="835323b9-1fff-4d4f-acc5-9dc18d436f66" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/IM_System/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/IM_System/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api_users/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/api_users/serializers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api_users/tasks.py" beforeDir="false" afterPath="$PROJECT_DIR$/api_users/tasks.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interview/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/interview/tests.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -212,7 +215,7 @@
       <updated>1697330800378</updated>
       <workItem from="1697330802725" duration="84466000" />
       <workItem from="1700071749091" duration="42000" />
-      <workItem from="1715452166919" duration="752000" />
+      <workItem from="1715452166919" duration="2721000" />
     </task>
     <servers />
   </component>
@@ -240,7 +243,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/api_users/tasks.py</url>
-          <line>14</line>
+          <line>12</line>
           <option name="timeStamp" value="61" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">

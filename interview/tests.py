@@ -12,12 +12,14 @@ class Test_Create_Interview(TestCase):
     def setUpTestData(cls):
         CustomModelUser.objects.create_user(
             email='vmakksimov@gmail.com', password='123456789', is_staff='True')
-        Interview.objects.create(id=1, candidate_first_name='Viktor',
-                                             candidate_last_name='Maksimov',
-                                            date_for_interview='2023-10-25',
-                                            email='vmakksimov@gmail.com',
-                                            mobile_number='359899006831',
-                                            gender='Male', status='Pending')
+        Interview.objects.create(
+            id=1, candidate_first_name='Viktor',
+            candidate_last_name='Maksimov',
+            date_for_interview='2023-10-25',
+            email='vmakksimov@gmail.com',
+            mobile_number='359899006831',
+            gender='Male', status='Pending'
+        )
 
     def test_interview_content(self):
         interview = Interview.objects.get(id=1)
@@ -45,8 +47,15 @@ class InterviewTests(APITestCase):
         Ensure we can view interviews if user is admin or staff.
 
         """
-        self.testuser1 = CustomModelUser.objects.create_user(email='elena@gmail.com', password='123456789', is_staff='True')
-        self.client.login(email=self.testuser1.email, password='123456789')
+        self.testuser1 = CustomModelUser.objects.create_user(
+            email='elena@gmail.com',
+            password='123456789',
+            is_staff='True'
+        )
+        self.client.login(
+            email=self.testuser1.email,
+            password='123456789'
+        )
         url = reverse('interview:all-interviews')
         response = self.client.get(url, format='json')
         self.assertEqual(response.status_code, status.HTTP_200_OK)
@@ -55,16 +64,29 @@ class InterviewTests(APITestCase):
         """
         Ensure we can create a new Interview object and view object.
         """
-        self.test_category = Interview.objects.create(candidate_first_name='Viktor', candidate_last_name='Maksimov',
-                                            date_for_interview='2023-10-25',
-                                            email='vmakksimov@gmail.com',
-                                            mobile_number='359899006831',
-                                            gender='Male', status='Pending')
-        self.testuser1 = CustomModelUser.objects.create_user(email='vmakksimov@gmail.com', password='123456789', is_staff='True')
+        self.test_category = Interview.objects.create(
+            candidate_first_name='Viktor',
+            candidate_last_name='Maksimov',
+            date_for_interview='2023-10-25',
+            email='vmakksimov@gmail.com',
+            mobile_number='359899006831',
+            gender='Male', status='Pending')
+
+        self.testuser1 = CustomModelUser.objects.create_user(
+            email='vmakksimov@gmail.com',
+            password='123456789',
+            is_staff='True'
+        )
         self.client.login(email=self.testuser1.email, password='123456789')
-        data = {"candidate_first_name": "Viktor",
-                "candidate_last_name": "Maksimov", "date_for_interview": "2023-10-25", "email": "vmakksimov@gmail.com",
-                "mobile_number": "359899006831", "gender": "Male", "status": "Pending"}
+
+        data = {
+            "candidate_first_name": "Viktor",
+                "candidate_last_name": "Maksimov",
+                "date_for_interview": "2023-10-25",
+                "email": "vmakksimov@gmail.com",
+                "mobile_number": "359899006831",
+                "gender": "Male", "status": "Pending"
+        }
         url = reverse('interview:create-interview')
         response = self.client.post(url, data, format='json')
         self.assertEqual(response.status_code, status.HTTP_201_CREATED)
@@ -73,20 +95,35 @@ class InterviewTests(APITestCase):
 
         client = APIClient()
 
-        self.test_category = Interview.objects.create(id=1, candidate_first_name='Viktor', candidate_last_name='Maksimov',
-                                            date_for_interview='2023-10-25',
-                                            email='vmakksimov@gmail.com',
-                                            mobile_number='359899006831',
-                                            gender='Male', status='Pending')
-        self.testuser1 = CustomModelUser.objects.create_superuser(email='vmakksimov@gmail.com', password='123456789')
-        self.testuser2 = CustomModelUser.objects.create_user(email='ivan@abv.bg', password='123456789')
+        self.test_category = Interview.objects.create(
+            id=1, candidate_first_name='Viktor',
+            candidate_last_name='Maksimov',
+            date_for_interview='2023-10-25',
+            email='vmakksimov@gmail.com',
+            mobile_number='359899006831',
+            gender='Male', status='Pending'
+        )
+
+        self.testuser1 = CustomModelUser.objects.create_superuser(
+            email='vmakksimov@gmail.com',
+            password='123456789'
+        )
+        self.testuser2 = CustomModelUser.objects.create_user(
+            email='ivan@abv.bg',
+            password='123456789'
+        )
+
         client.login(email=self.testuser1.email,password='123456789')
         url = reverse(('interview:modify-interviews'), kwargs={'pk': 1})
         response = client.put(
             url, {
                 "id": 1, "candidate_first_name": "Viktor",
-                "candidate_last_name": "Maksimov", "date_for_interview": "2023-10-25", "email": "vmakksimov@gmail.com",
-                "mobile_number": "359899006831", "gender": "Male", "status": "Pending"
+                "candidate_last_name": "Maksimov",
+                "date_for_interview": "2023-10-25",
+                "email": "vmakksimov@gmail.com",
+                "mobile_number": "359899006831",
+                "gender": "Male",
+                "status": "Pending"
             }, format='json')
         print(response.data)
         self.assertEqual(response.status_code, status.HTTP_200_OK)

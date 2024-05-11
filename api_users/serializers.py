@@ -5,10 +5,12 @@ from rest_framework.validators import UniqueValidator
 
 from api_users.models import CustomModelUser
 
+
 class UserSerializer(serializers.ModelSerializer):
     class Meta:
         model = CustomModelUser
         fields = ('id', 'email',)
+
 
 class UserRegistrationSerializer(serializers.ModelSerializer):
     email = serializers.EmailField(
@@ -18,6 +20,7 @@ class UserRegistrationSerializer(serializers.ModelSerializer):
     password = serializers.CharField(
             write_only=True, required=True, validators=[validate_password])
     password2 = serializers.CharField(write_only=True, required=True)
+
     class Meta:
         model = CustomModelUser
         fields = ('email', 'password', 'password2',)
@@ -30,11 +33,8 @@ class UserRegistrationSerializer(serializers.ModelSerializer):
         return attrs
 
     def create(self, validated_data):
-
         user = CustomModelUser.objects.create(
-
             email=validated_data['email'],
-
         )
         user.set_password(validated_data['password'])
         user.save()

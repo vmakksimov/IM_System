@@ -2,8 +2,6 @@ import time
 
 from celery import shared_task
 import logging
-
-
 from interview.models import Interview
 from services.ses import SESService
 @shared_task
